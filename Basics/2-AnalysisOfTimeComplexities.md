@@ -114,7 +114,7 @@ Loop Runs: log (log n) times
 
 ## 3. Analysis of Recursion
 **This analysis must be studied from different creator and must be practice at most**\
-ChatGPT Chat Link: https://chatgpt.com/share/67c080ed-3180-8002-8c86-0983270e4eb2 \
+ChatGPT Chat Link: https://chatgpt.com/share/67c080ed-3180-8002-8c86-0983270e4eb2
 
 Usually to determine time complexity of a recursive function we have 3 methods:
 1. Recursion Tree Method
@@ -162,7 +162,7 @@ Since the input is halved each time, recursion depth = O(log n).
 Since two recursive calls occur at each step, the depth grows exponentially, leading to O(2<sup>n</sup>).
 
 **Step 4: Use a Formula if Possible**
-Some common recurrence relations have well-known solutions:\
+Some common recurrence relations have well-known solutions:
 ---
 | Recurrence Relation              | Time Complexity  |
 |----------------------------------|------------------|
