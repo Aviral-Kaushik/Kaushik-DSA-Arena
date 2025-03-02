@@ -31,7 +31,7 @@ int getSum(int n) {
 }
 ```
 **Space Complexity:** O(1) (Only loop and variable initialization).\
-***Auxiliary Complexity:** O(1).
+**Auxiliary Complexity:** O(1).
 
 **Example 2: Factorial (Recursive)**
 ```
