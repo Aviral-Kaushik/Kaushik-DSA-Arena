@@ -12,10 +12,7 @@ public class LCM {
     private static int calculateLCMByNaiveMethod(int a, int b) {
         int res = Math.max(a, b);
 
-        while (true) {
-            if (res % a == 0 && res % b == 0) {
-                break;
-            }
+        while (res % a != 0 || res % b != 0) {
             res++;
         }
 
@@ -25,7 +22,7 @@ public class LCM {
     /**
      * Efficient Method
      * Relation Between GCD/HCF and LCM is:
-     *      a * b = gcb(a, b) * lcm(a, b)
+     *      a * b = GCD(a, b) * LCM(a, b)
      * Time Complexity: O(log(min(a, b)) (Time Complexity of Euclidean Algo used for calculating GCD of 2 number).
      * */
     private static int calculateLCMByEfficientMethod(int a, int b) {
