@@ -56,7 +56,7 @@ public class PrimeNumber {
      * 1. Check only till √n.
      * 2. By checking n % 2 == 0 and n % 3 == 0 we can save many iteration for large value of n.
      * <p>
-     * Time Complexity: O(√n) (But 3 times faster then last approach)
+     * Time Complexity: O(√n) (But 3 times faster than last approach)
      * */
     private static boolean checkForPrimeMoreEfficiently(int n) {
         if (n == 1) {
@@ -78,5 +78,9 @@ public class PrimeNumber {
         }
 
         return true;
+    }
+
+    public static boolean isPrime(int n) {
+        return checkForPrimeMoreEfficiently(n);
     }
 }
