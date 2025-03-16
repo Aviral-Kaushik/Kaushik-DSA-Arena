@@ -152,15 +152,4 @@ Binary Reperesentation of 33: 0 0 0 0 1 0 0 0 0 1
     }
 ```
 **Output:** 1\
-**Explanation:**
-```
-Binary Reperesentation of 33: 0 0 1 0 0 0 0 1
-                         -----------------------
-            >> 1 Operation:   0 0 0 1 0 0 0 0 (Shift the binary representation by 1)
-             Equivalent to:   16
-            
-Binary Reperesentation of 33: 0 0 0 0 1 0 0 0 0 1
-                         --------------------------
-            >> 4 Operation:   0 0 0 0 0 0 0 0 1 0 (Shift the binary representation by 4)
-             Equivalent to:   2
-```
+For Explanation better to Google Search this operator.
