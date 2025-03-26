@@ -1,7 +1,5 @@
 package Recursion;
 
-
-
 public class PrintingAllPermutations {
 
     /// In this problem we have given a string, and we have to print all the permutations of that string.
