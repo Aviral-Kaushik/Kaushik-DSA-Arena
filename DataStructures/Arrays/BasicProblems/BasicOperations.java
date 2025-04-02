@@ -1,4 +1,4 @@
-package DataStructures.Arrays.Basic;
+package DataStructures.Arrays.BasicProblems;
 
 public class BasicOperations {
 
@@ -19,6 +19,8 @@ public class BasicOperations {
      * Best Case Time Complexity: O(1) -> If the element is inserted at the end, no shifting is needed.
      * Worst Case Time Complexity: O(n) -> If inserted at the beginning, all elements must shift.
      * Average Case Time Complexity: O(n) -> On average, half the elements are shifted.
+     * <p>
+     * Space Complexity: O(n) -> Where n is size of array as we are creating ew array of size n -1;
      * */
     private static int[] insertElement(int[] arr, int element, int index) {
         if (index < 0 || index > arr.length) {
@@ -46,6 +48,8 @@ public class BasicOperations {
      * Best Case Time Complexity: O(1) -> If the last element is deleted, no shifting is needed.
      * Worst Case Time Complexity: O(n) -> If the first element is deleted, all elements must shift.
      * Average Case Time Complexity: O(n) -> If the first element is deleted, all elements must shift.
+     * <p>
+     * Space Complexity: O(n) -> Where n is size of array as we are creating ew array of size n -1;
      * */
     private static int[] deleteElement(int[] arr, int index) {
         if (index < 0 || index > arr.length) {
@@ -67,7 +71,7 @@ public class BasicOperations {
         return newArr;
     }
 
-    private static void printArray(int[] arr) {
+    public static void printArray(int[] arr) {
         for (int i: arr) {
             System.out.print(i + " ");
         }
