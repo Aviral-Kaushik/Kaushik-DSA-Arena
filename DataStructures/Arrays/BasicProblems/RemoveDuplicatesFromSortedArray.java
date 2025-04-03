@@ -1,6 +1,8 @@
 package DataStructures.Arrays.BasicProblems;
 
-public class RemoveDuplicates {
+public class RemoveDuplicatesFromSortedArray {
+
+    /// Note, this code has been written to remove duplicates from sorted array only.
 
     /**
      * Time Complexity: O(n)
