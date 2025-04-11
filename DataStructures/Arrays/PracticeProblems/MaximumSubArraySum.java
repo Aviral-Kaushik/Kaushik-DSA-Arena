@@ -7,7 +7,7 @@ public class MaximumSubArraySum {
 
     /**
      * Naive Method
-     * Time Complexity: O(n)
+     * Time Complexity: O(n ^ 2)
      * */
     private static int maxSubArraySumByNaiveMethod(int[] arr) {
         int res = arr[0];
@@ -24,6 +24,10 @@ public class MaximumSubArraySum {
         return res;
     }
 
+    /**
+     * Efficient Method (Kadane's Algorithm)
+     * Time Complexity: O(n)
+     * */
     private static int maxSubArraySumByEfficientMethod(int[] arr) {
         int res = arr[0];
         int maxEnding = arr[0];
