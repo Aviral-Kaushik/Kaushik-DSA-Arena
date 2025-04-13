@@ -67,3 +67,16 @@ jaggedArr[1] = new int[4]; // Row 1 has 4 columns
 ✔️ Random access is O(1) but insertions & deletions are O(n).\
 ✔️ Use ArrayList for dynamic resizing.\
 ✔️ Sorting is best done with Merge Sort or Quick Sort (O(n log n)).
+
+###  Important Problems
+These are frequently asked in interviews:
+- Kadane’s Algorithm (Maximum Subarray Sum)
+- Dutch National Flag Problem (Sort 0s, 1s, 2s)
+- Next Greater Element
+- Stock Buy and Sell (Best Time to Buy/Sell)
+- Trapping Rain Water
+- Merge Intervals
+- Rotate Array (by k steps)
+- Longest Consecutive Sequence
+- Missing Number / Duplicate Number
+- Median of Two Sorted Arrays (Hard)
