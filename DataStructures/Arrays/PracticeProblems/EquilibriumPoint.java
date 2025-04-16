@@ -98,6 +98,7 @@ public class EquilibriumPoint {
      * */
     public static boolean doesEquilibriumPointExitsWithoutPrefixMethod(int[] arr) {
         int totalSum = 0;
+
         for (int num : arr) {
             totalSum += num;
         }
