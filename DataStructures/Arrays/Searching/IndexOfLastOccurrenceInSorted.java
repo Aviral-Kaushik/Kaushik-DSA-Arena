@@ -26,7 +26,7 @@ public class IndexOfLastOccurrenceInSorted {
      * Binary Search
      * Time Complexity: O(log n)
      * */
-    private static int getIndexOfLastOccurrenceUsingBinaryElement(int[] arr, int target) {
+    public static int getIndexOfLastOccurrenceUsingBinaryElement(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
 
@@ -34,7 +34,7 @@ public class IndexOfLastOccurrenceInSorted {
             int mid = (start + end) / 2;
 
             if (arr[mid] == target) {
-                if (mid == end || arr[mid + 1] != target) {
+                if (mid == arr.length - 1 || arr[mid + 1] != target) {
                     return mid;
                 } else {
                     start = mid + 1;

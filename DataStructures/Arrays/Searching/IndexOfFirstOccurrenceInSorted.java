@@ -25,7 +25,7 @@ public class IndexOfFirstOccurrenceInSorted {
      * Binary Search
      * Time Complexity; O(log n)
      * */
-    private static int getIndexOfFirstOccurrenceUsingBinarySearch(int[] arr, int target) {
+    public static int getIndexOfFirstOccurrenceUsingBinarySearch(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
 
