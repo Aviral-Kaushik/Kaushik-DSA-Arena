@@ -59,7 +59,12 @@ public class AllocateMinimumPages {
 
     /**
      * Binary Search Method
-     * Time Complexity:
+     * Time Complexity: O(n * log(sum))
+     * Space = O(1)
+     * Where:
+     * n = number of books (arr.length)
+     * sum = total pages in all books
+     * So, this is very efficient even for large inputs.
      * */
     private static int maxPagesReadByStudentUsingBinarySearch(int[] arr, int k) {
         int sum = 0, max = 0;
