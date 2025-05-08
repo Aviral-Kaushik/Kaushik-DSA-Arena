@@ -130,3 +130,18 @@ Java uses a mix of chaining with balanced trees:
 | Collision Handling   | Not needed           | Required             |
 | Real-World Use       | Rare                 | Very common          |
 ---
+
+## Interview Importance for 2 Year Experience Android/Mobile Developer
+| Topic                            | Importance for Interviews | Notes                                                                                                                                           |
+|----------------------------------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Hash Table (concept + usage)** | ⭐⭐⭐⭐☆ (Very Important)    | Core data structure — almost every coding round uses HashMap/HashSet in some problem (e.g., Two Sum, Subarray Sum = K, Frequency Counter, etc.) |
+| **Direct Address Table**         | ⭐☆☆☆☆ (Low)               | Rarely asked directly. Mostly theoretical — seen in CS theory or academic contexts (not practical interviews). You can skip deep study.         |
+| **Hashing Function (idea)**      | ⭐⭐☆☆☆ (Moderate)          | You don’t need to design a custom hash function in interviews. Just understand it ensures uniform key distribution (e.g., in Java or Python).   |
+| **Collision Handling**           | ⭐⭐☆☆☆ (Moderate)          | Basic knowledge is enough — separate chaining vs open addressing. Rare to be asked explicitly unless it’s a system design or CS theory round.   |
+
+### ✅ Final Recommendation:
+What You Must Know (and use often):
+- HashMap / HashSet usage patterns.
+- Common hash-based problems: Two Sum, Longest Consecutive Sequence, Group Anagrams.
+- Tradeoffs: O(1) average case vs O(n) worst-case time due to collisions.
+- How Java/Dart handles hashing internally (basic level only).
