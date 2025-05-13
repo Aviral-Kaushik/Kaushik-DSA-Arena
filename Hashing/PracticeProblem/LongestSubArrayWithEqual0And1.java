@@ -1,7 +1,5 @@
 package Hashing.PracticeProblem;
 
-import java.util.HashMap;
-
 public class LongestSubArrayWithEqual0And1 {
 
     /// Problem Statement:
