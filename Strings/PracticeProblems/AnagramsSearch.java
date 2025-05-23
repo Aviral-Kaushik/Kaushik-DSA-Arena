@@ -1,6 +1,6 @@
 package Strings.PracticeProblems;
 
-public class AnagramsCheck {
+public class AnagramsSearch {
 
     /// Problem Statement:
     /// In this problem, we have given 2 strings & we have to check weather second string or its any permutations is
@@ -36,7 +36,7 @@ public class AnagramsCheck {
         String testCase1String2 = "frog"; // True
 
         String testCase2String1 = "geeksforgeeks";
-        String testCase2String2 = "rseek";
+        String testCase2String2 = "rseek"; // False
 
         System.out.println(checkAnagrams(testCase1String1, testCase1String2));
         System.out.println(checkAnagrams(testCase2String1, testCase2String2));
