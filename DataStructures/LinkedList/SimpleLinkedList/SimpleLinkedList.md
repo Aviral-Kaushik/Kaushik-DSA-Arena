@@ -59,7 +59,7 @@ class Node {
 - Implementation of stacks, queues, graphs.
 - Useful when number of data elements is not known in advance.
 
-🧠 Important Points:
+### 🧠 Important Points:
 - The last node's next is always ```NULL```.
 - Always check for ```NULL``` before accessing next.
 - Keep a temporary pointer to avoid memory leaks during deletion.

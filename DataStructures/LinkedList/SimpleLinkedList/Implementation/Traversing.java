@@ -1,4 +1,4 @@
-package DataStructures.LinkedList.SimpleLinkedList;
+package DataStructures.LinkedList.SimpleLinkedList.Implementation;
 
 public class Traversing {
 
@@ -8,7 +8,7 @@ public class Traversing {
     /**
      * Time Complexity: O(n)
      * */
-    private static void traverseLinkedList(Node head) {
+    public static void traverseLinkedList(Node head) {
         Node current = head;
 
         while (current != null) {
