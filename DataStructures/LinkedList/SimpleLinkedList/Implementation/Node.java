@@ -2,9 +2,13 @@ package DataStructures.LinkedList.SimpleLinkedList.Implementation;
 
 public class Node {
     int data;
-    public Node next; // Null Be default
+    public Node next; // Null By default
 
     public Node(int data) {
         this.data = data;
+    }
+
+    public int getData() {
+        return data;
     }
 }
