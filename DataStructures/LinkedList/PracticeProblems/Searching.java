@@ -6,6 +6,7 @@ public class Searching {
 
     /**
      * Time Complexity: O(n)
+     * Space Complexity: O(1)
      * */
     private static int searchIteratively(Node head, int target) {
         int position = 1;
@@ -23,6 +24,10 @@ public class Searching {
         return -1;
     }
 
+    /**
+     * Time Complexity: O(n)
+     * Space Complexity: O(n)
+     * */
     private static int searchRecursively(Node head, int target) {
         if (head == null) {
             return -1;
