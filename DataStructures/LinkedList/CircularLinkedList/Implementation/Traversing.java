@@ -5,7 +5,14 @@ import DataStructures.LinkedList.SimpleLinkedList.Implementation.Node;
 
 public class Traversing {
 
+    /**
+     * Time Complexity: O(n)
+     * */
     public static void traverse(Node head) {
+        if (head == null) {
+            return;
+        }
+
         Node current = head;
 
         do {
