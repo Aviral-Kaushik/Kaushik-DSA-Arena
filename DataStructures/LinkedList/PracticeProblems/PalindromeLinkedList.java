@@ -1,7 +1,5 @@
 package DataStructures.LinkedList.PracticeProblems;
 
-import DataStructures.LinkedList.SimpleLinkedList.Implementation.Node;
-
 import java.util.Objects;
 
 public class PalindromeLinkedList {
