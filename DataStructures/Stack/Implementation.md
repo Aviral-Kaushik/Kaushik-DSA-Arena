@@ -27,6 +27,10 @@ class Stack {
         if (top == -1) throw new RuntimeException("Stack is Empty");
         return arr[top];
     }
+    
+    public int size() {
+        return top + 1;
+    }
 
     boolean isEmpty() {
         return top == -1;
@@ -48,27 +52,35 @@ class Node {
 
 class StackUsingLinkedList {
     private Node top;
+    private int size;
 
     public StackUsingLinkedList() {
         this.top = null;
+        this.size = 0;
     }
 
     public void push(int x) {
         Node newNode = new Node(x);
         newNode.next = top;
         top = newNode;
+        size++;
     }
 
     public int pop() {
         if (top == null) throw new RuntimeException("Stack Underflow");
         int val = top.data;
         top = top.next;
+        size--;
         return val;
     }
 
     public int peek() {
         if (top == null) throw new RuntimeException("Stack is Empty");
         return top.data;
+    }
+    
+    public int size() {
+        return size;
     }
 
     public boolean isEmpty() {
