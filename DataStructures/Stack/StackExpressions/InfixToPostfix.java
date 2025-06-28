@@ -44,14 +44,12 @@ public class InfixToPostfix {
     }
 
     private static int getPrecedence(char operator) {
-        if (operator == '^')
-            return 3;
-        else if (operator == '/' || operator == '*')
-            return 2;
-        else if (operator == '+' || operator == '-')
-            return 1;
-        else
-            return-1;
+        return switch (operator) {
+            case '^' -> 3;
+            case '*', '/' -> 2;
+            case '+', '-' -> 1;
+            default -> -1;
+        };
     }
 
     private static boolean isRightAssociative(char operator) {
