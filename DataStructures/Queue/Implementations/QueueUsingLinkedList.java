@@ -13,13 +13,15 @@ public class QueueUsingLinkedList {
     public void enqueue(int data) {
         Node newNode = new Node(data);
 
-        if (rear == null) {
-            front = rear = newNode;
-            return;
+        if (rear != null) {
+            rear.next = newNode;
         }
 
-        rear.next = newNode;
         rear = newNode;
+
+        if (front == null) {
+            front = rear;
+        }
 
         size++;
     }
@@ -28,7 +30,7 @@ public class QueueUsingLinkedList {
      * Time Complexity: O(1)
      * */
     public int dequeue() {
-        if (front == null)
+        if (isEmpty())
             throw new RuntimeException("Queue Underflow!");
 
         int result = front.getData();
