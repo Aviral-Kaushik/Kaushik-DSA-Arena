@@ -1,7 +1,5 @@
 package DataStructures.Queue.PracticeProblems;
 
-import DataStructures.Queue.Utils.PrintQueue;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -11,7 +9,11 @@ public class ReversingAQueue {
     /// Problem Statement:
     /// In this problem, we have given a queue and our task is to reverse that queue.
 
-    private static Queue<Integer> reverseQueue(Queue<Integer> queue) {
+    /**
+     * Time Complexity: O(n)
+     * Space Complexity: O(n)
+     * */
+    private static void reverseQueue(Queue<Integer> queue) {
         Stack<Integer> stack = new Stack<>();
 
         while (!queue.isEmpty()) {
@@ -19,12 +21,28 @@ public class ReversingAQueue {
             queue.remove();
         }
 
-        while (stack.isEmpty()) {
+        while (!stack.isEmpty()) {
             queue.add(stack.peek());
             stack.pop();
         }
+    }
 
-        return queue;
+    /**
+     * Time Complexity: O(n)
+     * Space Complexity: O(n)
+     * */
+    private static void reverseQueueUsingRecursion(Queue<Integer> queue) {
+        if (queue.isEmpty()) {
+            return;
+        }
+
+        int element = queue.peek();
+
+        queue.remove();
+
+        reverseQueueUsingRecursion(queue);
+
+        queue.add(element);
     }
 
     public static void main(String[] args) {
@@ -34,7 +52,12 @@ public class ReversingAQueue {
         testCase1.add(15);
         testCase1.add(20);
 
-        PrintQueue.printQueue(reverseQueue(testCase1));
+        reverseQueue(testCase1);
+        System.out.println(testCase1);
+
+        reverseQueueUsingRecursion(testCase1);
+        System.out.println(testCase1);
+
     }
 
 }
