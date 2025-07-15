@@ -27,7 +27,7 @@ public class DequeUsingDoublyLinkedList {
     /**
      * Time Complexity: O(n)
      * */
-    public void addRead(int data) {
+    public void addLast(int data) {
         Node newNode = new Node(data);
 
         if (rear == null) {
